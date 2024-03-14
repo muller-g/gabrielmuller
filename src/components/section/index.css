@@ -1,0 +1,9 @@
+.section{
+    @apply
+    flex
+    flex-col
+    mb-10
+    w-full
+    justify-center
+    items-center
+}

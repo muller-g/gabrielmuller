@@ -1,0 +1,20 @@
+.services{
+    @apply
+    relative
+    h-[95vh]
+    w-full
+    flex
+    items-center
+    flex-col
+    pt-11
+}
+
+.services .grid-services {
+    grid-template-rows: 100px 100px 100px;
+    row-gap: 60px;
+    padding: 0 100px;
+    @apply
+    w-full
+    grid
+    grid-cols-2
+}

@@ -1,0 +1,47 @@
+.home{
+    @apply
+    pt-16
+    relative
+    h-[95vh]
+}
+
+.home .home-title{
+    @apply
+    text-8xl
+    font-bold
+    text-primary
+}
+
+.home .home-title span{
+    @apply
+    underline
+    underline-offset-4
+    decoration-secondary
+}
+
+.home .home-wrapper {
+    @apply
+    grid
+    grid-cols-2
+    gap-2
+    pt-20
+}
+
+.home .home-wrapper .text-content{
+    @apply
+    max-w-[80%]
+    text-left
+    pt-20
+}
+
+.home .home-wrapper .text-content p{
+    @apply
+    text-2xl
+    mb-10
+    text-primary
+}
+
+.home .home-wrapper .text-content span {
+    @apply
+    text-gray-800
+}

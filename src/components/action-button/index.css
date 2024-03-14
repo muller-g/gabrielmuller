@@ -1,0 +1,16 @@
+.action-button {
+    transition: .3s;
+    @apply
+    text-xl
+    bg-secondary
+    pt-1
+    pb-1
+    pl-3
+    pr-3
+    rounded-lg
+}
+
+.action-button:hover {
+    transition: .3s;
+    transform: scale(116%);
+}

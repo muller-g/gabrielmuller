@@ -1,0 +1,9 @@
+.container {
+    @apply
+    max-w-1300
+    w-full
+    flex
+    flex-col
+    justify-center
+    items-center
+}

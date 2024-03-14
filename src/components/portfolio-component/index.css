@@ -1,0 +1,48 @@
+.portfolio-component{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .3s;
+    overflow: hidden;
+    @apply
+    max-h-[250px]
+    h-full
+    max-w-[422px]
+    w-full
+    rounded-xl
+    border-secondary
+    cursor-pointer
+    relative
+}
+
+.portfolio-component h1{
+    @apply
+    hidden
+}
+
+.portfolio-component:hover{
+    transition: .3s;
+    background-size: 200%;
+}
+
+.portfolio-component:hover h1{
+    z-index: 9999;
+    transform: translateX(-50%);
+    @apply
+    flex
+    absolute
+    top-[50%]
+    left-[50%]
+    text-3xl
+}
+
+.portfolio-component:hover:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000CF;
+}

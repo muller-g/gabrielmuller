@@ -1,0 +1,59 @@
+.header {
+    z-index: 999;
+    @apply
+    w-full
+    flex
+    justify-center
+    items-center
+    h-[65px]
+    border-b-2
+    border-secondary
+    fixed
+    bg-primary
+}
+
+.header .header-wrapper {
+    @apply
+    w-full
+    flex
+    justify-between
+    items-center
+    align-middle
+}
+
+.header .header-wrapper .logo-content a {
+    transition: .3s;
+    @apply
+    text-xl
+    font-bold
+    cursor-pointer
+}
+
+.header .header-wrapper .logo-content a:hover {
+    transition: .3s;
+    @apply
+    text-secondary
+}
+
+.header .header-wrapper ul{
+    @apply
+    flex
+    gap-4
+    align-middle
+    items-center
+}
+
+.header .header-wrapper ul li a{
+    transition: .3s;
+    @apply
+    text-xl
+    cursor-pointer
+}
+
+.header .header-wrapper ul li a:hover{
+    transition: .3s;
+    @apply
+    underline
+    underline-offset-4
+    decoration-secondary
+}
