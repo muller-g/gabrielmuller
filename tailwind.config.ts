@@ -8,6 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'xl': {'max': '1299px'},
+        'md': {'max': '900px'},
+        // => @media (max-width: 1279px) { ... }
+      },
       maxWidth: {
         '1300': '1300px',
       },

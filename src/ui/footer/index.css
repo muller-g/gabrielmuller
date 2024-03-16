@@ -1,0 +1,79 @@
+.footer {
+    background: rgb(17,20,24);
+    background: linear-gradient(180deg, rgba(17,20,24,1) 0%, rgba(73,13,107,1) 44%, rgba(112,8,165,1) 84%, rgba(146,4,216,1) 98%, rgba(173,0,255,1) 100%);
+    @apply
+    w-full
+    justify-center
+    flex
+}
+
+.footer .footer-content{
+    @apply
+    w-full
+    pt-28
+    pb-10
+    flex
+    justify-between
+    items-center
+}
+
+.footer .footer-content .footer-logo h1{
+    @apply
+    text-4xl
+    font-bold
+}
+
+.footer p {
+    @apply
+    mb-5
+}
+
+.footer .footer-content .footer-social .wrapper {
+    @apply
+    flex
+    gap-2
+    mb-4
+    items-center
+}
+
+.footer .footer-content .footer-social .wrapper img{
+    @apply
+    w-[25px]
+    object-contain
+}
+
+.footer .footer-content .footer-social .wrapper p {
+    @apply
+    text-sm
+    mb-0
+}
+
+.footer .footer-content .footer-nav {
+    transition: .3s;
+    @apply
+    flex
+    flex-col
+    cursor-pointer
+    gap-2
+}
+
+.footer .footer-content .footer-nav a:hover {
+    @apply
+    underline
+    decoration-secondary
+    underline-offset-2
+}
+
+@media (max-width: 655px){
+    .footer .footer-content {
+        @apply
+        flex-col
+        text-center
+        gap-12
+    }
+
+    .footer .footer-content .footer-nav a {
+        @apply
+        text-xl
+    }
+}

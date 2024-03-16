@@ -1,3 +1,7 @@
 .home-content .section:first-child{
     padding-top: 65px!important;
 }
+
+.home-content .section:last-child{
+    margin-bottom: 0px!important;
+}

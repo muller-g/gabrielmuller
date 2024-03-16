@@ -1,0 +1,26 @@
+.wpp-button {
+    transition: .3s;
+    @apply
+    text-xl
+    bg-[#39BE50]
+    pt-1
+    pb-1
+    pl-3
+    pr-3
+    rounded-lg
+    max-w-max
+    flex
+    gap-2
+    items-center
+    justify-center
+}
+
+.wpp-button img {
+    @apply
+    w-[25px]
+}
+
+.wpp-button:hover {
+    transition: .3s;
+    background-color: #39BE50AB;
+}

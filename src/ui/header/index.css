@@ -6,8 +6,6 @@
     justify-center
     items-center
     h-[65px]
-    border-b-2
-    border-secondary
     fixed
     bg-primary
 }
@@ -19,6 +17,12 @@
     justify-between
     items-center
     align-middle
+}
+
+.header .header-wrapper .burger-menu {
+    @apply
+    hidden
+    w-[50px]
 }
 
 .header .header-wrapper .logo-content a {
@@ -56,4 +60,36 @@
     underline
     underline-offset-4
     decoration-secondary
+}
+
+.show-mob{
+    left: 0 !important;
+    @apply
+    h-screen
+    flex
+    flex-col
+    top-0
+    w-full
+    justify-center
+    items-center
+    bg-primary
+}
+
+@media (max-width: 899px) {
+    .burger-menu img {
+        width: 35px;
+    }
+
+    .header .header-wrapper .burger-menu {
+        @apply
+        flex
+        max-w-max
+    }
+
+    .header .header-wrapper ul{
+        left: 100%;
+        transition: .3s;
+        @apply
+        absolute
+    }
 }

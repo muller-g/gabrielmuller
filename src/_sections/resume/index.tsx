@@ -124,7 +124,7 @@ export default function ResumeSection() {
                             </TimelineContent>
                         </TimelineItem>
                     </Timeline>
-                    <ArrowDown ancor={""}/>
+                    <ArrowDown ancor="social"/>
                 </div>
             </Container>
         </Section>

@@ -10,7 +10,7 @@
 }
 
 .arrow-down svg {
-    @apply w-[80px];
+    @apply w-[50px];
 }
 
 @keyframes arrowUpDown {

@@ -3,45 +3,149 @@
     pt-16
     relative
     h-[95vh]
-}
-
-.home .home-title{
-    @apply
-    text-8xl
-    font-bold
-    text-primary
-}
-
-.home .home-title span{
-    @apply
-    underline
-    underline-offset-4
-    decoration-secondary
-}
-
-.home .home-wrapper {
-    @apply
     grid
     grid-cols-2
-    gap-2
-    pt-20
+    gap-72
+    w-full
 }
 
-.home .home-wrapper .text-content{
+.home .home-about{
     @apply
-    max-w-[80%]
-    text-left
-    pt-20
+    h-full
+    flex
+    flex-col
+    justify-center
+    mt-[0px]
+    relative
+    z-10
 }
 
-.home .home-wrapper .text-content p{
+.home .home-about h3{
     @apply
-    text-2xl
+    text-xl
+    mb-3
+}
+
+.home .home-about h1{
+    @apply
+    font-bold
+    text-7xl
+    underline-offset-[20px]
+    underline
+    decoration-secondary
     mb-10
-    text-primary
 }
 
-.home .home-wrapper .text-content span {
+.home .home-about p{
     @apply
-    text-gray-800
+    max-w-[500px]
+    text-xl
+    leading-8
+}
+
+.home .home-social {
+    @apply
+    w-full
+}
+
+.home .home-social{
+    @apply
+    h-full
+    flex
+    flex-col
+    justify-center
+    relative
+    z-10
+    mt-[-155px]
+}
+
+.home .home-social h3{
+    @apply
+    text-xl
+    mb-5
+    font-bold
+}
+
+.home .home-social p{
+    @apply
+    text-xl
+    mb-5
+}
+
+.home .home-social a{
+    transition: .3s;
+    @apply
+    text-xl
+    cursor-pointer
+    flex
+    gap-2
+    items-center
+}
+
+.home .home-social a:hover{
+    transition: .3s;
+    @apply
+    text-secondary
+}
+
+.home .home-social a svg{
+    transition: .3s;
+    @apply
+    w-[20px]
+    h-[25px]
+    fill-white
+}
+
+.home .home-social a:hover svg{
+    transition: .3s;
+    @apply
+    fill-secondary
+}
+
+.home .highlight{
+    box-shadow: inset #000000 0px 0px 60px -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #1a1f23;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.home .highlight img{
+    position: absolute;
+    left: -56px;
+    width: 2000px;
+}
+
+@media (max-width: 500px) {
+    .home .highlight{
+        width: 400px!important;
+        height: 400px!important;
+    }
+}
+
+@media (max-width: 500px) {
+    .home{
+        @apply
+        grid-cols-1
+    }
+
+    .about .projects-count {
+        @apply
+        grid
+        grid-cols-2
+    }
+
+    .about .projects-count .project:nth-child(2) {
+        @apply
+        border-r-0
+    }
 }

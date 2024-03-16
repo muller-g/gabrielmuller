@@ -12,7 +12,7 @@ export default function SocialSection() {
         <Section id="social" color="#fff">
             <Container>
                 <div className="social">
-                    <Title title="Social" color="#111418" />
+                    <Title title="Acompanhe no Instagram" color="#111418" />
                     <div className="grid-portfolio">
                         {
                             services.map((item: any, i: number) => (
@@ -20,7 +20,7 @@ export default function SocialSection() {
                             ))
                         }
                     </div>
-                    <ArrowDown ancor="resume"/>
+                    <ArrowDown ancor="contact"/>
                 </div>
             </Container>
         </Section>

@@ -1,9 +1,26 @@
 .container {
     @apply
     max-w-1300
+    xl:max-w-[900px]
     w-full
     flex
     flex-col
     justify-center
     items-center
+}
+
+@media (max-width: 899px) {
+    .container{
+        @apply
+        pl-10
+        pr-10
+    }
+}
+
+@media (max-width: 500px) {
+    .container{
+        @apply
+        pl-5
+        pr-5
+    }
 }

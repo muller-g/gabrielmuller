@@ -5,10 +5,9 @@ import Container from "@/components/container";
 import ArrowDown from "@/components/arrow-down";
 import Title from "@/components/title";
 import ServiceComponent from "@/components/service-component";
-import monitor from "../../assets/monitor.svg";
+import data from "../../data/DataFile";
 
 export default function ServicesSection() {
-    const services = [1,2,3,4,5,6]
     return(
         <Section id="services" color="#111418">
             <Container>
@@ -16,8 +15,8 @@ export default function ServicesSection() {
                     <Title title="Meus serviços" color="#fff" />
                     <div className="grid-services">
                         {
-                            services.map((item: any, i: number) => (
-                                <ServiceComponent title="Web design" info="Criação de sistema web, atraente, responsivo." icon={monitor} />
+                            data.data.services.map((item: any, i: number) => (
+                                <ServiceComponent title={item.title} info={item.info} icon={item.icon.src} />
                             ))
                         }
                     </div>

@@ -10,11 +10,28 @@
 }
 
 .services .grid-services {
-    grid-template-rows: 100px 100px 100px;
-    row-gap: 60px;
-    padding: 0 100px;
     @apply
     w-full
     grid
-    grid-cols-2
+    grid-cols-4
+    gap-5
+}
+
+@media (max-width: 899px) {
+    .services {
+        @apply
+        h-fit
+    }
+
+    .services .grid-services {
+        @apply
+        grid-cols-2
+    }
+}
+
+@media (max-width: 500px) {
+    .services .grid-services {
+        @apply
+        grid-cols-1
+    }
 }

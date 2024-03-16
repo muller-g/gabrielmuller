@@ -16,5 +16,19 @@
     grid-cols-3
     h-full
     gap-5
-    grid-rows-[250px]
+}
+
+@media (max-width: 899px) {
+    .portfolio .grid-portfolio{
+        @apply
+        grid-cols-2
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio .grid-portfolio{
+        @apply
+        grid-rows-[255px_255px_255px_255px]
+        grid-cols-1
+    }
 }
