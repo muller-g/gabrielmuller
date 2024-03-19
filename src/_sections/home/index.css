@@ -1,11 +1,10 @@
 .home{
     @apply
-    pt-16
     relative
     h-[95vh]
     grid
     grid-cols-2
-    gap-72
+    gap-10
     w-full
 }
 
@@ -15,7 +14,6 @@
     flex
     flex-col
     justify-center
-    mt-[0px]
     relative
     z-10
 }
@@ -72,9 +70,10 @@
     mb-5
 }
 
-.home .home-social a{
+.home .home-about a{
     transition: .3s;
     @apply
+    mt-10
     text-xl
     cursor-pointer
     flex
@@ -82,13 +81,13 @@
     items-center
 }
 
-.home .home-social a:hover{
+.home .home-about a:hover{
     transition: .3s;
     @apply
     text-secondary
 }
 
-.home .home-social a svg{
+.home .home-about a svg{
     transition: .3s;
     @apply
     w-[20px]
@@ -96,46 +95,33 @@
     fill-white
 }
 
-.home .home-social a:hover svg{
+.home .home-about a:hover svg{
     transition: .3s;
     @apply
     fill-secondary
 }
 
-.home .highlight{
-    box-shadow: inset #000000 0px 0px 60px -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 15%;
-    width: 700px;
-    height: 700px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-color: #1a1f23;
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    z-index: 0;
+.home .home-bg {
+    @apply
+    bg-no-repeat
+    bg-contain
+    bg-[0px_40%]
 }
 
-.home .highlight img{
-    position: absolute;
-    left: -56px;
-    width: 2000px;
-}
-
-@media (max-width: 500px) {
-    .home .highlight{
-        width: 400px!important;
-        height: 400px!important;
-    }
-}
-
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     .home{
         @apply
         grid-cols-1
+    }
+
+    .home .home-bg {
+        @apply
+        h-[500px]
+    }
+
+    .home .home-about h1 {
+        @apply
+        text-4xl
     }
 
     .about .projects-count {

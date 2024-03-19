@@ -45,7 +45,7 @@ export default function Footer(){
                             </a>
                         </div>
                     </div>
-                    <p>Criado e desenvolvido por Gabriel Müller, 2024</p>
+                    <p className="footer-rights">Criado e desenvolvido por Gabriel Müller, 2024</p>
                 </>
             </Container>
         </footer>

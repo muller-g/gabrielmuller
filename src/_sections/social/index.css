@@ -16,7 +16,7 @@
     grid-cols-3
     h-full
     gap-5
-    grid-rows-[250px]
+    grid-rows-[450px]
 }
 
 @media (max-width: 899px) {
@@ -28,8 +28,8 @@
 
 @media (max-width: 500px) {
     .social .grid-portfolio{
+        grid-template-rows: repeat(1, minmax(250px, 1fr));
         @apply
         grid-cols-1
-        grid-rows-[250px_250px_250px_250px_250px_250px]
     }
 }

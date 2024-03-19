@@ -79,3 +79,10 @@
         text-xl
     }
 }
+
+@media (max-width: 500px) {
+    .service-component .line-component span {
+        @apply
+        text-base
+    }
+}

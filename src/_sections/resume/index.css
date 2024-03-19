@@ -27,3 +27,10 @@
     @apply
     text-xl
 }
+
+@media (max-width: 600px){
+    .resume div span{
+        @apply
+        text-xl
+    }
+}

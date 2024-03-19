@@ -76,4 +76,8 @@
         @apply
         text-xl
     }
+
+    .footer-rights {
+        font-size: 14px!important;
+    }
 }

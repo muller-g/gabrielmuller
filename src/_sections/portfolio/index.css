@@ -15,6 +15,7 @@
     grid
     grid-cols-3
     h-full
+    grid-rows-[255px_255px_255px_255px]
     gap-5
 }
 
