@@ -4,7 +4,6 @@ import Section from "@/components/section";
 import Container from "@/components/container";
 import ArrowDown from "@/components/arrow-down";
 import Title from "@/components/title";
-import fetchData from "@/util/fetchData";
 import InstagramComponent from "@/components/instagram-component";
 import {useEffect, useState} from "react";
 import axios from "axios";
