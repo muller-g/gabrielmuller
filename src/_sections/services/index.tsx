@@ -16,7 +16,7 @@ export default function ServicesSection() {
                     <div className="grid-services">
                         {
                             data.data.services.map((item: any, i: number) => (
-                                <ServiceComponent key={`service-comp-${i}`} title={item.title} info={item.info} icon={item.icon.src} />
+                                <ServiceComponent i={i} title={item.title} info={item.info} icon={item.icon.src} />
                             ))
                         }
                     </div>
