@@ -1,0 +1,29 @@
+.my-link-button {
+    -webkit-box-shadow: 7px 12px 0px 0px rgba(0,0,0,100);
+    -moz-box-shadow: 7px 12px 0px 0px rgba(0,0,0,100);
+    box-shadow: 7px 12px 0px 0px rgba(0,0,0,100);
+    @apply
+    w-full
+    bg-white
+    text-black
+    flex
+    text-center
+    relative
+    h-[45px]
+    justify-center
+    items-center
+    rounded-full
+    cursor-pointer
+}
+
+.my-link-button .img-btn {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @apply
+    rounded-full
+    w-[40px]
+    h-[40px]
+    absolute
+    left-0
+}

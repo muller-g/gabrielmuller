@@ -1,0 +1,63 @@
+header,
+footer {
+    display: none!important;
+}
+
+.my-links {
+    background: rgb(17,20,24);
+    background: linear-gradient(180deg, rgba(17,20,24,1) 7%, rgba(173,0,255,1) 100%);
+    @apply
+    w-full
+    flex
+    justify-center
+    items-center
+    h-screen
+}
+
+.my-links .my-links-container{
+    @apply
+    max-w-500
+    w-full
+    h-screen
+    flex
+    flex-col
+    pl-5
+    pr-5
+    justify-center
+    items-center
+}
+
+.my-links .my-links-container .title-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @apply
+    w-[130px]
+    h-[130px]
+    rounded-full
+    mb-3
+}
+
+.my-links .my-links-container .instagram-title {
+    @apply
+    text-xl
+    font-bold
+    mb-1
+    text-white
+}
+
+.my-links .my-links-container .description {
+    @apply
+    max-w-[300px]
+    text-sm
+    text-center
+    mb-8
+}
+
+.my-links .my-links-container .redirect-links {
+    @apply
+    flex
+    flex-col
+    gap-5
+    w-full
+}

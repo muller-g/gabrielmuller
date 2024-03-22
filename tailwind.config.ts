@@ -15,6 +15,7 @@ const config: Config = {
       },
       maxWidth: {
         '1300': '1300px',
+        '500': '500px'
       },
       colors: {
         "primary": "#111418",
