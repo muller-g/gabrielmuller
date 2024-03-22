@@ -15,7 +15,7 @@ export default function MeusLinks() {
                 <p className="description">Vamos colocar seu projeto na internet e alcançar seus objetivos!</p>
                 <div className="redirect-links">
                     <LinksButton text={'Acesse meu site'} url={'https://gabrielmullerdev.com.br'} icon={www} />
-                    <LinksButton text={'Fale comigo'} url={'https://web.whatsapp.com/send?phone=5547997003649&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20%F0%9F%98%80'} icon={wpp} />
+                    <LinksButton text={'Fale comigo'} url={'https://api.whatsapp.com/send?phone=5547997003649&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20%F0%9F%98%80'} icon={wpp} />
                     <LinksButton text={'Linkedin'} url={'https://www.linkedin.com/in/muller-g/'} icon={linkedin} />
                     <LinksButton text={'GitHub'} url={'https://github.com/muller-g'} icon={github} />
                 </div>

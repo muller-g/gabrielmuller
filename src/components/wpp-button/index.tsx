@@ -24,6 +24,8 @@ export default function WppButton() {
     function sendMessage() {
         if (windowSize && windowSize >= 700) {
             window.open('https://web.whatsapp.com/send?phone=5547997003649&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20%F0%9F%98%80', '_blank');
+        } else {
+            window.open('https://api.whatsapp.com/send?phone=5547997003649&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20site%20%F0%9F%98%80', '_blank');
         }
     }
     return(
