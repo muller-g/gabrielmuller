@@ -51,7 +51,7 @@ export default function Header(){
                         <li><a onClick={() => scrollToSection("#services")}>Serviços</a></li>
                         <li><a onClick={() => scrollToSection("#portfolio")}>Portfólio</a></li>
                         <li><a onClick={() => scrollToSection("#resume")}>Experiência</a></li>
-                        <li><a onClick={() => scrollToSection("#social")}>Social</a></li>
+                        {/*<li><a onClick={() => scrollToSection("#social")}>Social</a></li>*/}
                         <ActionButton onClick={() => scrollToSection("#contact")} text="Contato"/>
                     </ul>
                     <button className="burger-menu" onClick={showMenu}><img src={burger.src} alt=""/></button>
