@@ -2,6 +2,7 @@
     -webkit-box-shadow: 7px 12px 0px 0px rgba(0,0,0,100);
     -moz-box-shadow: 7px 12px 0px 0px rgba(0,0,0,100);
     box-shadow: 7px 12px 0px 0px rgba(0,0,0,100);
+    transition: .3s;
     @apply
     w-full
     bg-white
@@ -26,4 +27,9 @@
     h-[40px]
     absolute
     left-0
+}
+
+.my-link-button:hover{
+    transition: .3s;
+    background-color: #dbdbdb;
 }
