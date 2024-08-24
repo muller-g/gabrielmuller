@@ -52,7 +52,7 @@ export default function MeusLinks() {
                         onChange={handleChange} centered>
                         <Tab label="Links" value={"tab1"} />
                         <Tab label="Serviços" value={"tab2"} />
-                        <Tab label="Tecnologias" value={"tab3"} />
+                        <Tab label="Skills" value={"tab3"} />
                     </Tabs>
                 </div>
                 <div className="content-tab">

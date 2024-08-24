@@ -18,7 +18,6 @@
     flex-col
     pl-5
     pr-5
-    overflow-auto
     pb-[40px]
 }
 
@@ -101,7 +100,9 @@
     mb-3;
 }
 
-footer {
-    position: absolute;
-    bottom: 0px;
+@media (max-width: 800px){
+    .my-links .my-links-container {
+        @apply
+        overflow-auto
+    }
 }
