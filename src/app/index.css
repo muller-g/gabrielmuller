@@ -1,63 +1,107 @@
-header,
-footer {
-    display: none!important;
-}
-
 .my-links {
-    background: rgb(17,20,24);
-    background: linear-gradient(180deg, rgba(17,20,24,1) 7%, rgba(173,0,255,1) 100%);
-    @apply
-    w-full
-    flex
-    justify-center
-    items-center
-    h-screen
+    background: rgb(17, 20, 24);
+    background: linear-gradient(180deg, rgba(17, 20, 24, 1) 7%, rgba(173, 0, 255, 1) 100%);
+    @apply 
+    w-full 
+    flex 
+    justify-center 
+    items-center 
+    h-screen;
 }
 
-.my-links .my-links-container{
+.my-links .my-links-container {
     @apply
     max-w-500
     w-full
-    h-screen
+    h-full
     flex
     flex-col
     pl-5
     pr-5
-    justify-center
-    items-center
+    overflow-auto
+    pb-[40px]
 }
 
-.my-links .my-links-container .title-img{
+.my-links .my-links-container .fixed-section {
+    @apply
+    flex
+    flex-col
+    items-center
+    justify-center
+    pt-[40px]
+}
+
+.title-img {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     @apply
-    w-[130px]
-    h-[130px]
+    w-[135px]
+    h-[135px]
     rounded-full
-    mb-3
+    mb-3;
 }
 
-.my-links .my-links-container .instagram-title {
+.instagram-title {
     @apply
     text-xl
     font-bold
     mb-1
-    text-white
+    text-white;
 }
 
-.my-links .my-links-container .description {
+.description {
     @apply
     max-w-[300px]
-    text-base
-    text-center
+    text-[1.1rem]
+    text-center;
 }
 
-.my-links .my-links-container .redirect-links {
+.content-tab {
+    @apply
+    flex
+    w-full;
+}
+
+.redirect-links {
     @apply
     flex
     flex-col
     gap-5
     w-full
-    mt-[15px]
+    mt-[15px];
+}
+
+.tab-selector {
+    @apply
+    flex
+    w-full
+    mb-5
+    mt-5;
+}
+
+.technology {
+    @apply
+    flex
+    flex-col;
+}
+
+.technology h1 {
+    @apply
+    text-base
+    mb-3
+    w-full;
+}
+
+.tec-list {
+    @apply
+    flex
+    gap-2
+    flex-wrap
+    mb-3;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
 }

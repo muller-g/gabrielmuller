@@ -1,0 +1,46 @@
+.service {
+    transition: .3s;
+    -webkit-box-shadow: 7px 12px 0px 0px rgba(0,0,0,100);
+    -moz-box-shadow: 7px 12px 0px 0px rgba(0,0,0,100);
+    box-shadow: 7px 12px 0px 0px rgba(0,0,0,100);
+    @apply
+    border-2
+    rounded-lg
+    p-2
+    flex
+    gap-4
+    items-center
+    h-[90px]
+    cursor-pointer
+    bg-white
+    text-black
+}
+
+.service-img svg {
+    @apply
+    text-5xl
+}
+
+.service-content h1 {
+    @apply
+    text-lg
+    underline
+}
+
+.service:hover {
+    transition: .3s;
+    background-color: white;
+}
+
+.service:hover h1,
+.service:hover p,
+.service:hover svg {
+    transition: .3s;
+    color: black;
+}
+
+@media (max-width: 485px) {
+    .service {
+        height: 100px;
+    }
+}
