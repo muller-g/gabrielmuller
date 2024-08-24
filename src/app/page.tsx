@@ -43,7 +43,6 @@ export default function MeusLinks() {
                             },
                             '& .MuiTab-root': {
                                 color: 'white',
-                                fontSize: '1.1rem'
                             },
                             '& .Mui-selected': {
                                 color: 'white!important',
