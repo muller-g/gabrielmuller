@@ -28,7 +28,7 @@ export default function MeusLinks() {
     };
 
     return (
-        <main className="my-links" style={selectedTab === 'tab1' || selectedTab === 'tab3' ? {height: '100vh'} : {height: 'auto'}}>
+        <main className="my-links" style={selectedTab === 'tab1' ? {height: '100vh'} : {height: 'auto'}}>
             <div className="my-links-container">
                 <div className="fixed-section">
                     <div className="title-img" style={{backgroundImage: `url("${me.src}")`}}></div>
